@@ -1,0 +1,196 @@
+/* Layout Defaults */
+
+@import url(https://fonts.googleapis.com/css?family=Jaldi:400,700);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #1CBBCC;
+  font-family: 'Jaldi', Helvetica, Calibri, sans-serif;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.wrapper {
+  margin: auto;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: #38777F;
+  font-weight: 1000;
+}
+
+h3 {
+  color: #12737F;
+}
+
+.masthead {
+  font-size: 1.3rem;
+}
+/* Code for .mainnav taken from Saturn assingment and customized for this project*/
+
+.mainnav a,
+.mainnav a:visited {
+  text-decoration: none;
+  display: block;
+  font-size: 1.3rem;
+  background-color: #12737F;
+  color: #1CBBCC;
+  text-align: center;
+}
+
+.mainnav a:hover,
+.mainnav a:active {
+  background-color: #70EEFF;
+  color: #1CBBCC;
+}
+
+.footer {
+  clear: both;
+  background-color: #38777F;
+  color: #70EEFF;
+  padding: .6rem;
+  font-size: .9rem;
+}
+/* Mobile Design Layout */
+
+@media all and (min-width:0px) and (max-width:560px) {
+  .wrapper {
+    line-height: 1.5;
+  }
+  .content,
+  .side {
+    padding-left: .6rem;
+    padding-right: .6rem;
+  }
+  .masthead h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+  .content h2,
+  h3 {
+    padding-top: 10px;
+    text-align: center;
+    color: #12737F;
+    font-size: 1.5rem;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+}
+/* Between 35em and 60em - 560px - 960px */
+
+@media all and (min-width:561px) and (max-width:960px) {
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    color: #12737F;
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
+  .mainnav ul {
+    background-color: #12737F;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding-right: .6rem;
+  }
+  .mainnav li {
+    display: table-cell;
+    width: 25%;
+  }
+  .primary {
+    padding-top: 10px;
+  }
+  .left {
+    float: left;
+    padding-top: .4rem;
+    padding-right: 0.5rem;
+    width: 60%;
+  }
+  .right {
+    float: right;
+    padding-top: .25rem;
+    padding-right: 1rem;
+    padding-left: .5rem;
+    width: 60%;
+  }
+  section {
+    float: left;
+    width: 63%;
+    padding-right: 1.3rem;
+    padding-left: .6rem;
+  }
+  .side {
+    float: right;
+    width: 34%;
+    padding-top: 10px;
+    padding-right: 5.4px;
+  }
+  .side p {
+    font-size: 14px;
+  }
+}
+/* Between 961px and 1600px */
+
+@media all and (min-width:961px) and (max-width:1600px) {
+  .wrapper {
+    width: 100%;
+    max-width: 1600px;
+  }
+  .masthead h1 {
+    padding: 1rem;
+  }
+  h2 {
+    font-size: 1.9rem;
+  }
+  h3 {
+    font-size: 1.5rem;
+  }
+  .mainnav {
+    float: left;
+    width: 25%;
+    padding-right: 1rem;
+  }
+  .right {
+    width: 0%;
+    padding-right: 1rem;
+  }
+  img {
+    position: fixed;
+    postion: relative;
+    position: absolute;
+    top: 15.55em;
+    left: 0px;
+    width: 25%;
+    padding-right: 1rem;
+  }
+  /* Assistantance for .content came from modules and peer(s) associated with MADD */
+  
+  .content {
+    float: left;
+    -webkit-column-count: 2;
+    moz-column-count: 2;
+    column-count: 2;
+    width: 50%;
+  }
+  .side {
+    float: left;
+    width: 25%;
+    padding-left: 1rem;
+    padding-right: .6rem;
+  }
+}
